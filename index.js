@@ -47,7 +47,7 @@ const Config = {
     const filePath = path.resolve('animation.html');
     console.log('Resolved file path:', filePath); // Print the resolved file path
     const fileUrl = `file://${filePath}`; // Convert to file URL
-    await recorder.start(`./output.mp4`); // start recording
+    await recorder.start(`./output/output.mp4`); // start recording
 
     await page.goto(fileUrl);
 
